@@ -19,12 +19,7 @@ window = CTk()
 window.geometry('1024x632')
 window.resizable(0,0)
 window.title('Login Page')
-img = CTkImage(Image.open("Employee_Management_System_Python_Tkinter_MySQL\img\Screenshot 2024-07-12 050538.png"), 
-               size=(1024,632))
-image_label = CTkLabel(window, 
-                       image=img, 
-                       text='')
-image_label.place(x=0, y=0)
+window.config(bg='#0C0D2A')
 
 heading_label = CTkLabel(window, 
                          text='Employee Management System', 
