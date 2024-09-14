@@ -1,6 +1,5 @@
 from customtkinter import *
 from tkinter import *
-from PIL import Image
 from tkinter import messagebox
 
 set_appearance_mode("dark")

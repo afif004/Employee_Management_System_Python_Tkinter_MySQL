@@ -1,6 +1,5 @@
 from customtkinter import *
 from tkinter import *
-from PIL import Image
 from tkinter import ttk
 from tkinter import messagebox
 from database import *
@@ -114,7 +113,7 @@ def clear_all():
     address_entry.delete("1.0", "end")
 
 
-# Define selected_row at the beginning of your script
+# Define selected_row at the beginning
 selected_row = None
 # Function to get data from the selected row in the Treeview
 def get_selected_row(event):
@@ -419,7 +418,6 @@ doj_label.place(relx=0.55, rely=0.45)
 doj_entry = CTkEntry(master=page1,
                      textvariable=date_of_joining_var,
                      font=("Helvetica", 18),
-                     placeholder_text="dd/mm/yy",
                      width=360,
                      height=30,
                      fg_color=("", "#1d1f32"),
